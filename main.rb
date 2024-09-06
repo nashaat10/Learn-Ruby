@@ -111,3 +111,129 @@ puts "result is #{calc( num1, num2 ,op)}"
 
 =end
 
+################################################################
+
+=begin  [Case statement]
+
+def week_day(day)
+  day_name= ""
+  
+case day
+when "sat"
+  day_name = "saturday"
+when "sun"
+  day_name="sunday"
+when "mon"
+  day_name="monday"
+when "tue"
+  day_name="tuesday"
+when "wed"
+    day_name="wednesday"
+when "thu"
+    day_name="thursday"
+when "fri"
+    day_name="friday"
+else
+  day_name="Invalid abbreviation"
+end
+return day_name
+end
+
+puts week_day("fri")
+
+=end
+
+################################################################
+
+=begin  [While loop]
+
+sum = 0
+i =0
+while i<10
+  sum += i
+  i += 1
+  end
+  puts sum
+
+
+sec_word = "mohamed"
+guess = ""
+i = 0
+while guess != sec_word and i < 3
+  puts "Enter guess: "
+  guess = gets.chomp()
+  i += 1
+  end
+  puts "you lost"
+  
+ 
+=end
+################################################################
+=begin [For loop]
+numbers = [10,20,30,40,50]
+
+for number in numbers
+  puts number
+end
+
+=end
+
+################################################################
+
+# 3.times do 
+#   puts "hello world"
+#   end
+
+################################################################
+
+# 3.times do |index|
+#   puts "the index is #{index}"
+# end
+
+################################################################
+# include the last number (5)
+# (0..5).each do |i|
+#   puts "the index is #{i}"
+# end
+
+################################################################
+
+# not include the last number (5)
+# (0...5).each do |i|
+#   puts "the index is #{i}"
+# end
+
+################################################################
+
+# 1.upto(5) do |i|
+#   puts "hello world #{i}"
+# end
+
+# 5.downto(1) do |i|
+#   puts "hello world #{i}"
+# end
+
+################################################################
+# neg_nums = [-1,-2,-3,-4,-5]
+
+# pos_nums = neg_nums.map do |n|
+#   n.abs 
+# end
+
+# puts pos_nums
+
+################################################################
+
+# myColors = ["red", "blue", "green", "yellow"]
+
+# myColors.each_with_index do |color , index |
+#   puts "the color is #{color} and the index is #{index}"
+# end
+
+# myColors.push("white")
+# myColors.push("black")
+# myColors.delete_at(0)
+# puts myColors
+
+################################################################
+
